@@ -14,7 +14,7 @@ client.on("guildMemberAdd", (member) => {
   const welcomeChannel = guild.channels.find(channel => channel.name == welcomeChannelName);
 
   welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
-})
+});
 
 client.on('message', (message) => {
   if(message.content === ';링') {
@@ -24,8 +24,8 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message,content === ';규칙') {
-    message.reply('1. 밤 늦게 채팅치지 마세요. 2.아무나 초대하지 마세요.')
+    message.reply('1. 밤 늦게 채팅치지 마세요. 2.아무나 초대하지 마세요.');
   }
-})
+});
 
 client.login(token);
