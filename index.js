@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.env.token;
-const welcomeChannelName = "일반"
-const welcomeChannelComment = "어서오세요. ';규칙' 명령어을 사용하여 LOL서버의 규칙을 확인해 주세요."
+const welcomeChannelName = "일반";
+const welcomeChannelComment = "어서오세요. ';규칙' 명령어을 사용하여 LOL서버의 규칙을 확인해 주세요.";
 
 client.on('ready', () => {
   console.log('Ling online');
